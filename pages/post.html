@@ -1,0 +1,63 @@
+<div class="p-10 max-h-[560px] overflow-y-scroll  ">
+    <div class="flex flex-col">
+      <h3 class="text-4xl font-bold"><span class="text-blue-300">Blog</span> Post</h3>
+
+      <hr class="mt-4 mx-auto w-3/4 border-t border-gray-200 dark:border-gray-700"/>
+
+      <div class="mt-4 px-8">
+        <img class=" w-full h-[260px] opacity-100 " alt="Post description" src="/images/cms.jpg">
+        <div class="w-4/5 mx-auto ">
+          <div class=" w-2/3 mx-auto flex justify-between mt-3">
+            <h4 class="text-gray-500">By: <span class="text-blue-500">Tom Capper</span></h4>
+            <span class="text-gray-500">February 1, 2023</span>
+          </div>
+          <h2 class="mt-3 text-2xl font-bold">Procuring Work on Consulted Assurance in Do</h2>
+         <div class="flex">
+        <span class="text-blue-500 hover:underline mr-1 cursor-pointer">Marketing Industry</span>|
+        <span class="text-blue-500 hover:underline ml-1 cursor-pointer">Search Engines</span>      
+      </div>
+      <p class="text-gray-400 text-sm mt-3">
+        Dolore duis ea laborum veniam ut in. Nostrud eu do enim occaecat sint ea quis est velit elit sunt Lorem anim.
+      </p> 
+      <!-- Body -->
+      <div class="mt-4">
+       <p>
+        Aliquip ut sunt dolor minim et dolor culpa magna ea sunt elit. Labore laboris deserunt aute ullamco. In occaecat eiusmod deserunt consectetur ipsum magna ullamco ex.
+       </p>
+       <p class="mt-2">
+        Consectetur ipsum Lorem est commodo fugiat consequat dolor incididunt ipsum laboris adipisicing. Elit amet ex in dolor consectetur. Commodo ut sint fugiat amet do sunt culpa adipisicing consectetur non fugiat minim velit. Ea cupidatat occaecat qui do proident.
+       </p>
+       <p class="mt-2">
+        Eiusmod pariatur velit consectetur cillum proident culpa elit dolor voluptate. Enim adipisicing elit do est cupidatat. In non nisi do Lorem fugiat labore. Ea incididunt excepteur cupidatat sunt labore magna et nulla ad cupidatat. In cillum consectetur irure laborum dolor mollit incididunt culpa ipsum.
+       </p>
+       <ul class="list-disc mt-2">
+        <li class="text-blue-500 hover:underline">Excepteur velit fugiat deserunt eu ex id excepteur ea voluptate et magna fugiat culpa.</li>
+        <li class="text-blue-500 hover:underline">Now this is a story all about how</li>
+        <li class="text-blue-500 hover:underline">Now this is a story all about how</li>
+      </ul>
+      <h3 class="mt-8 text-center text-gray-600 text-2xl">Read Next</h3>
+      </div>
+      
+
+
+        </div>
+
+        <div class="grid grid-cols-3 gap-3 mt-4">
+          <div v-for="post in relatedPosts" class="p-4 text-center border-[1px] border-solid border-gray-300 rounded-lg">
+            <img :src="`/images/${post.image}`" class="w-full max-h-16 h-16 place-self-center"/>
+            <h3 class="text-xl text-gray-700 mt-4 h-24 min-h-24 mb-auto">{{ post.title }}</h3>
+            <a class="text-blue-500 flex justify-center items-center cursor-pointer hover:underline mt-4 font-semibold">Read this post
+
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>              
+            </a>
+          </div>
+          </div>
+
+      </div>
+
+
+    </div>
+
+    </div>

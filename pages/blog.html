@@ -1,0 +1,34 @@
+<div class="p-10 max-h-[560px] overflow-y-scroll  ">
+    <div class="flex flex-col">
+    <h3 class="text-4xl font-bold">Blog</h3>
+    <!-- <div class="flex mt-4">
+     <span v-for="(c, index) in categories" 
+     :class="index > 0 ? 'ml-2' : ''"
+      class="text-gray-300 cursor-pointer hover:text-gray-500">{{ c }}</span>
+    </div> -->
+    <div class="mt-4 grid grid-cols-2 gap-x-4 gap-y-8">
+    <div class="pb-3  flex flex-col border-[1px] border-solid border-gray-200" v-for="post in posts">
+      <router-link to="/blog/post" class="overflow-hidden relative">
+      <!-- <a href="/blog/post" class="overflow-hidden relative"> -->
+        <img class=" w-full h-[160px] opacity-100 hover:opacity-50 hover:transition-all hover:duration-500 hover:ease-in-out  hover:scale-125" :alt="post.title" :src="`/images/${post.image}`">
+    <h5 class="bg-white text-xs text-black absolute left-2 top-1 px-1">{{ post.category }}</h5>
+    </router-link>
+
+    <span class="mx-4 mt-3 text-gray-400 text-sm">{{ post.date }}</span>
+      <h3 class="mx-4 mt-1 text-xl font-semibold cursor-pointer">{{ post.title }}</h3>
+    </div>
+
+    </div>
+
+   <div class="mt-10 flex justify-center bg-gray-50 py-2">
+    <span class="text-xl text-gray-400 cursor-pointer">1</span>
+    <span class="text-xl text-gray-400 cursor-pointer ml-2">2</span>
+    <span class="text-xl text-gray-400 cursor-pointer hover:text-gray-600  ml-2">Next 
+
+    </span>
+   </div>
+
+
+    </div>
+
+    </div>

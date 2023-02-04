@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcards One Page Website</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    
+    <!-- <script   src="https://cdn.tailwindcss.com"></script> -->
+    <script  src="lib/vuejs.js"></script>
+    <script   src="lib/vue-router.js"></script>
+  </head>
+  <body>
+      <div id="flashcard-app" class="flex h-screen bg-gray-100">
+      <div
+      class="rounded-large bg-gradient-to-r from-blue-200 to-transparent grid grid-cols-12 w-[1200px] h-[560px] max-h-[560px] m-auto"
+    >
+    <!-- Sidebar -->
+    <flashcard-sidebar></flashcard-sidebar>
+
+      <!-- Page content -->
+      <div class="bg-white col-span-8 w-full rounded-large flex flex-col mr-6">
+
+      <router-view></router-view>
+      </div>
+
+      <!-- Menu -->
+     <flashcard-menu></flashcard-menu>
+
+    </div>
+    </div>
+<script src="js/index.js"></script>
+  </body>
+</html>
