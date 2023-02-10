@@ -1,13 +1,11 @@
-<div class="p-10 max-h-[560px] overflow-y-scroll  ">
+<div class="p-10 md:max-h-[560px] overflow-y-scroll">
     <div class="flex flex-col">
       <h3 class="text-4xl font-bold"><span class="text-blue-300">Blog</span> Post</h3>
-
-      <hr class="mt-4 mx-auto w-3/4 border-t border-gray-200 dark:border-gray-700"/>
-
-      <div class="mt-4 px-8">
+      <hr class="mt-4 mx-auto md:w-3/4 border-t border-gray-200 dark:border-gray-700"/>
+      <div class="mt-4 md:px-8">
         <img class=" w-full h-[260px] opacity-100 " alt="Post description" src="/images/cms.jpg">
-        <div class="w-4/5 mx-auto ">
-          <div class=" w-2/3 mx-auto flex justify-between mt-3">
+        <div class="md:w-4/5 md:mx-auto ">
+          <div class="w-4/5 md:w-2/3 mx-auto flex justify-between mt-3">
             <h4 class="text-gray-500">By: <span class="text-blue-500">Tom Capper</span></h4>
             <span class="text-gray-500">February 1, 2023</span>
           </div>
@@ -20,7 +18,7 @@
         Dolore duis ea laborum veniam ut in. Nostrud eu do enim occaecat sint ea quis est velit elit sunt Lorem anim.
       </p> 
       <!-- Body -->
-      <div class="mt-4">
+      <div class="mt-8 md:mt-4">
        <p>
         Aliquip ut sunt dolor minim et dolor culpa magna ea sunt elit. Labore laboris deserunt aute ullamco. In occaecat eiusmod deserunt consectetur ipsum magna ullamco ex.
        </p>
@@ -30,7 +28,7 @@
        <p class="mt-2">
         Eiusmod pariatur velit consectetur cillum proident culpa elit dolor voluptate. Enim adipisicing elit do est cupidatat. In non nisi do Lorem fugiat labore. Ea incididunt excepteur cupidatat sunt labore magna et nulla ad cupidatat. In cillum consectetur irure laborum dolor mollit incididunt culpa ipsum.
        </p>
-       <ul class="list-disc mt-2">
+       <ul class="list-disc mt-2 ml-4 md:ml-0">
         <li class="text-blue-500 hover:underline">Excepteur velit fugiat deserunt eu ex id excepteur ea voluptate et magna fugiat culpa.</li>
         <li class="text-blue-500 hover:underline">Now this is a story all about how</li>
         <li class="text-blue-500 hover:underline">Now this is a story all about how</li>
@@ -42,7 +40,7 @@
 
         </div>
 
-        <div class="grid grid-cols-3 gap-3 mt-4">
+        <div class="w-2/3 mx-auto md:w-full grid grid-cols-1 md:grid-cols-3 gap-3 mt-4">
           <div v-for="post in relatedPosts" class="p-4 text-center border-[1px] border-solid border-gray-300 rounded-lg">
             <img :src="`/images/${post.image}`" class="w-full max-h-16 h-16 place-self-center"/>
             <h3 class="text-xl text-gray-700 mt-4 h-24 min-h-24 mb-auto">{{ post.title }}</h3>
@@ -56,8 +54,5 @@
           </div>
 
       </div>
-
-
     </div>
-
     </div>
