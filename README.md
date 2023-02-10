@@ -20,3 +20,6 @@ Change the data using your preferred Editor like [VS Code](https://code.visualst
 ## Screenshots:
 
 ![flashcard-cv-one-page-site](./screenshots/Flashcard-preview.png)
+
+## Bugs and Issues:
+Have a bug or an issue with this template? Open a new issue [here](https://github.com/wpplumber/flashcards/issues) on GitHub to help enhance the template toward better UX.
